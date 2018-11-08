@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="top-header">
+                <div class="logo">
+					<img src="images/VKlogo.png" width="50" height="50">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="registration" id="reg">
+
+                <div class="title-content">
+                    <h1 class="main-title">Тренажер «Регистрация в социальной сети»</h1>
+                    <p>Менеджер Пивоваренной компании «Балтика» Иван Пивоваров собирается зарегистрироваться в социальной сети «В контакте». Помогите ему завести аккаунт, соответствующий Политике по поведению в социальных сетях.</p>
+                </div>
+
+                <div class="registration-forms">
+                    <form id="name-form" action="" method="post">
+                        <p class="title">Имя и фамилия пользователя</p>
+                        <p class="answer" id="name-answer"></p>
+						<p class="field">
+                            <label><input type="radio" id="q1-1" name="name" value="1-1">Иван Пивоваров</label>
+                        </p>
+                        <p>
+							<label><input type="radio" id="q1-2" name="name" value="1-2">Пивной Супермен</label>
+                        </p>
+                        <p>
+                            <label><input type="radio" id="q1-3" name="name" value="1-3">Ваня Балтика</label>
+                        </p>
+				    </form>
+                </div>
+
+                <div class="registration-forms">
+                    <form id="photo-form" action="" method="post">
+                        <p class="title">Фото профиля</p>
+                        <p class="answer" id="photo-answer"></p>
+                        <p class="field">
+                            <label><input type="radio" id="q2-1" name="photo" value="2-1"><img src="images/baltika.jpeg"></label>
+                        </p>
+                        <p>
+                            <label><input type="radio" id="q2-2" name="photo" value="2-2"><img src="images/man.jpg"></label>
+                        </p>
+                        <p>
+                            <label><input type="radio" id="q2-3" name="photo" value="2-3"><img src="images/superman.jpg"></label>
+                        </p>
+                    </form>
+                </div>
+
+                <div class="registration-forms">
+                    <form id="work-form" action="" method="post">
+                        <p class="title">Место работы</p>
+                        <p class="answer" id="work-answer"></p>
+                        <p class="field">
+                            <label><input type="radio" id="q3-1" name="company" value="3-1">Пивоваренная компания «Балтика»/ Carlsberg Group</label>
+                        </p>
+                        <p>
+                            <label><input type="radio" id="q3-2" name="company" value="3-2">beer company</label>
+                        </p>
+                        <p>
+                            <label><input type="radio" id="q3-3" name="company" value="3-3">Не указано</label>
+                        </p>
+                    </form>
+                </div>
+
+                <div class="registration-forms">
+                    <form id="about-form" action="" method="post">
+                        <p class="title">О себе</p>
+                        <p class="answer" id="about-answer"></p>
+                        <p class="field">
+                            <label><input type="radio" id="q4-1" name="about" value="4-1">Пил, пью и буду пить!</label>
+                        </p>
+                        <p>
+                            <label><input type="radio" id="q4-2" name="about" value="4-2">Работаю в сфере 18+</label>
+                        </p>
+                        <p>
+                            <label><input type="radio" id="q4-3" name="about" value="4-3">Я работаю в пивоваренной компании «Балтика», при этом мои личные взгляды могут не совпадать с мнением моего работодателя.</label>
+                        </p>
+                    </form>
+                </div>
+
+                <div class="dialog-section">
+                    <dialog id="dialog">
+                        <div class="dialog-container">
+                            <p>Поздравляю, теперь Ваш аккаунт полностью соответствует Политике компании «Балтика» по поведению в социальных сетях!</p>
+                            <button id="close">Закрыть</button>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="main-footer">
+        <div class="container">
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <script src="./js/scripts.js"></script> 
+</body>
+</html>
